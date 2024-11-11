@@ -9,8 +9,12 @@ int nwd(int a,int b){
 }
 
 int main(){
-	int x,y;
+	int x,y;	
 	std::cin>>x>>y;
-	std::cout<<x<<" "<<y<<" "<<nwd(x,y);
+	if(x<=0 || y<=0){
+		std::cout<<"wartosc niedodatnia";
+		return 0;
+	}
+	std::cout<<x<<" "<<y<<" "<<nwd(x,y);	
 	return 0;
 }
